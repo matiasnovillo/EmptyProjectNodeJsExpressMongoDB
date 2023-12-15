@@ -1,0 +1,28 @@
+@api = http://localhost:3000/api
+
+### Select all
+{{api}}/CMSCore/User
+
+### Select 1
+{{api}}/CMSCore/User/657b3e478b5a704a380f3422
+
+### Insert
+POST {{api}}/CMSCore/User
+Content-Type: application/json
+
+{
+    "email": "carlos1@gmail.com", 
+    "password": "123", 
+    "username": "CarlosH" 
+}
+
+### Update
+PATCH {{api}}/CMSCore/User/657b3e478b5a704a380f3422
+Content-Type: application/json
+
+{
+    "username": "Garcia" 
+}
+
+### Delete
+DELETE {{api}}/CMSCore/User/657b57ae9516660dc57daa85
